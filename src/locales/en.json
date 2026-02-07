@@ -1,0 +1,150 @@
+{
+  "nav": {
+    "home": "Home",
+    "destinations": "Destinations",
+    "offers": "Offers",
+    "website": "website",
+    "Carerer": "Careers",
+    "login": "Login",
+    "About": "About",
+    "Contact": "Contact",
+    "start": "Start Journey"
+  },
+  "hero": {
+    "title": "Explore the world with",
+    "subtitle": "We offer you a smart, fast flight booking experience at the best global prices.",
+    "destination_placeholder": "Where do you want to go?",
+    "search_btn": "Search Flights"
+  },
+ 
+  "about": {
+    "hero_badge": "Travel Smart.. Travel Safe",
+    "hero_title_1": "We Balance",
+    "hero_title_accent": "Premium Experience",
+    "hero_title_2": "With",
+    "hero_title_budget": "Smart Budgeting",
+    "hero_description": "We believe travel is a right for everyone; that's why we designed a booking system that ensures global safety standards with carefully planned economic packages.",
+    "safety_title": "Our Safety Commitment",
+    "safety_item_1": "Comprehensive insurance on all trips",
+    "safety_item_2": "Licensed and certified transport partners",
+    "safety_item_3": "24/7 live trip tracking via app",
+    "safety_item_4": "On-ground emergency support in every destination",
+    "iso_note": "* We apply international safety standards ISO 31000",
+    "economy_title": "Smart Economic Travel",
+    "economy_item_1": "Real-time price comparison system",
+    "economy_item_2": "Exclusive discounts for early bookings",
+    "economy_item_3": "All-inclusive packages (Flight + Hotel + Transport)",
+    "economy_item_4": "Interest-free installment options",
+    "discount_note": "Save up to 30% when booking 15 days in advance",
+    "why_us_title": "Why Travelers Trust Us?",
+    "feature_timing_title": "Punctuality",
+    "feature_timing_desc": "We stick to a strict schedule to ensure every minute of your trip is utilized.",
+    "feature_groups_title": "Group Trips",
+    "feature_groups_desc": "Economic packages for groups and families at competitive prices.",
+    "feature_destinations_title": "Selected Destinations",
+    "feature_destinations_desc": "Our team visits destinations first to ensure quality and safety.",
+    "feature_transparency_title": "Full Transparency",
+    "feature_transparency_desc": "No hidden fees; the price you see is the price you pay.",
+    "banner_title_1": "Your Next Trip",
+    "banner_title_2": "In",
+    "banner_title_accent": "Safe Hands",
+    "banner_desc": "Whether you are planning a short domestic trip or a transcontinental adventure, we guarantee the perfect balance between economic price and peace of mind.",
+    "btn_book": "Book Your Trip Now",
+    "btn_consult": "Talk to a Consultant",
+    "stat_safe": "Safe Trips",
+    "stat_saving": "Cost Savings"
+  },
+  "contact": {
+    "hero": {
+      "badge": "Contact us anytime",
+      "title_part1": "We're here to help",
+      "title_part2": "Every step of the way."
+    },
+    "info": {
+      "call": "Call Us",
+      "email": "Email Us",
+      "visit": "Visit Us",
+      "address": "Cairo, Egypt",
+      "support_title": "24/7 Live Support",
+      "support_desc": "Our team is always available to answer your inquiries and solve your technical problems as quickly as possible.",
+      "status": "Available Now"
+    },
+    "form": {
+      "title": "Send us a message",
+      "desc": "Have a specific inquiry? Fill out the form below and one of our consultants will get back to you.",
+      "name_label": "Full Name",
+      "name_placeholder": "Enter your name here...",
+      "email_label": "Email Address",
+      "email_placeholder": "example@mail.com",
+      "msg_label": "Your Message",
+      "msg_placeholder": "How can we help you today?",
+      "submit_btn": "Send Message Now"
+    },
+    "map": {
+      "label": "Headquarters",
+      "city": "Cairo, Egypt"
+    }
+  },
+  "ecosystem": {
+    "tagline": "The Future of Travel",
+    "title_part1": "Your Journey Starts",
+    "title_part2": "With Ticketzita",
+    "main_description": "We bridge the gap between local comfort and global exploration through a seamless digital ecosystem designed for the modern traveler.",
+    
+    "intl_desc": "Explore the world without boundaries. Access thousands of international flights and luxury hotels with a single click.",
+    "intl_f1": "500+ Global Airlines",
+    "intl_f2": "Instant Visa Assistance",
+    "intl_f3": "Multi-currency Payments",
+    "intl_btn": "Explore International",
+
+    "local_desc": "Discover the hidden gems of your country. Tailored local experiences with premium transport and stay options.",
+    "local_f1": "Best Local Rates",
+    "local_f2": "24h Domestic Support",
+    "local_f3": "Exclusive Local Deals",
+    "local_btn": "Discover Locally",
+
+    "stat_users": "Active Users",
+    "stat_dest": "Destinations",
+    "stat_support": "Live Support",
+    "stat_rate": "User Rating",
+
+    "bridge_title": "One Account, Infinite Possibilities",
+    "bridge_desc": "Switch seamlessly between our local and international platforms. Your data, loyalty points, and preferences follow you everywhere.",
+    "badge_1": "Unified Wallet",
+    "badge_2": "Smart Sync",
+    "badge_3": "Premium Access",
+
+    "how_it_works": "Simple Steps",
+    "step_1": "Create your unified global account",
+    "step_2": "Choose your destination (Local or Intl)",
+    "step_3": "Enjoy a 360° supported travel experience",
+    "why_title_tag": "Why Ticketzita?",
+    "why_main_title": "More than just a booking platform, we are your travel companion.",
+    "why_feature1_title": "Absolute Security",
+    "why_feature1_desc": "Your data and payments are encrypted with the highest global security standards.",
+    "why_feature2_title": "Lightning Fast",
+    "why_feature2_desc": "Book your flight or stay in less than 60 seconds with our optimized engine.",
+    "why_feature3_title": "Comprehensive Coverage",
+    "why_feature3_desc": "We connect you to over 500 destinations worldwide with ease and comfort."
+  },
+  "footer": {
+    "description": "Your first destination for organizing trips and booking tickets locally and internationally with the latest technologies and best prices.",
+    "quick_links": "Quick Links",
+    "about": "About Ticketzita",
+    "intl_trips": "International Trips",
+    "local_dest": "Local Destinations",
+    "faq": "FAQ",
+    "support": "Support & Help",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions",
+    "help_center": "Help Center",
+    "contact_us": "Contact Us",
+    "newsletter_title": "Subscribe With Us",
+    "newsletter_desc": "Get the latest offers and discounts directly to your inbox.",
+    "email_placeholder": "Your Email Address",
+    "send": "Send",
+    "rights": "All Rights Reserved.",
+    "location": "Cairo, Egypt"
+  }
+ 
+}
