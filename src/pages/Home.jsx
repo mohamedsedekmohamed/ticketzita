@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from './../assets/mainlogo.jpeg'
+import logo from './../assets/homepic.jpeg'
 import { useTranslation } from 'react-i18next';
 
 const Home = () => {
@@ -12,12 +12,12 @@ const Home = () => {
         <div className="absolute inset-0 z-0">
           <img 
             src={logo} 
-            className="w-full h-full object-contain"
+            className="w-full h-full "
            
             alt="Hero Background"
           />
           {/* Overlay متدرج يعطي فخامة ويبرز النصوص */}
-          <div className="absolute inset-0 bg-gradient-to-b from-[#03112C]/80 via-[#03112C]/40 to-[#03112C]/90"></div>
+          {/* <div className="absolute inset-0 bg-gradient-to-b from-[#03112C]/80 via-[#03112C]/40 to-[#03112C]/90"></div> */}
         </div>
 
         {/* Hero Content */}
