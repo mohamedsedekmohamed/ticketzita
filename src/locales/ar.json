@@ -6,6 +6,7 @@
     "website": "المواقع ",
     "Carerer": "الوظائف",
     "About": "من نحن",
+    "Services": "خدماتنا",
     "Contact": "اتصل بنا",
     "login": "تسجيل الدخول",
     "start": "ابدأ رحلتك"
@@ -59,25 +60,26 @@
       "title_part1": "نحن هنا لمساعدتك",
       "title_part2": "في كل خطوة."
     },
+   "form": {
+      "title": "تواصل معنا",
+      "desc": "سيب لنا رسالتك وإحنا هنرد عليك في أقرب وقت ممكن.",
+      "name_label": "الاسم الكامل",
+      "email_label": "البريد الإلكتروني",
+      "phone_label": "رقم الهاتف",
+      "service_label": "نوع الخدمة",
+      "service_placeholder": "اختر نوع الطلب",
+      "service_trips": "رحلاتي",
+      "service_heavy": "نقل تقيل",
+      "service_tickets": "حجز تذاكر",
+      "msg_label": "رسالتك",
+      "submit_btn": "إرسال الرسالة"
+    },
     "info": {
       "call": "اتصل بنا",
-      "email": "البريد الإلكتروني",
-      "visit": "موقعنا",
-      "address": "القاهرة، جمهورية مصر العربية",
-      "support_title": "دعم فني مباشر 24/7",
-      "support_desc": "فريقنا متواجد دائماً للرد على استفساراتك وحل مشكلاتك التقنية في أسرع وقت ممكن.",
+      "email": "راسلنا",
+      "support_title": "الدعم الفني",
+      "support_desc": "فريق الدعم متاح للرد على استفساراتك ومساعدتك في أي وقت.",
       "status": "متاح الآن"
-    },
-    "form": {
-      "title": "أرسل لنا رسالة",
-      "desc": "لديك استفسار خاص؟ املأ النموذج أدناه وسيقوم أحد مستشارينا بالتواصل معك.",
-      "name_label": "الاسم الكامل",
-      "name_placeholder": "ادخل اسمك هنا...",
-      "email_label": "البريد الإلكتروني",
-      "email_placeholder": "example@mail.com",
-      "msg_label": "رسالتك",
-      "msg_placeholder": "كيف يمكننا مساعدتك اليوم؟",
-      "submit_btn": "إرسال الرسالة الآن"
     },
     "map": {
       "label": "المقر الرئيسي",
@@ -143,6 +145,68 @@
     "email_placeholder": "بريدك الإلكتروني",
     "send": "إرسال",
     "rights": "جميع الحقوق محفوظة.",
-    "location": "القاهرة، مصر"
+    "location": "القاهرة، مصر",
+    "suez": "السويس",
+    "cairo": "القاهرة",
+    "branches": "فروعنا"
+  },
+ "services": {
+    "badge": "بوابتك لعالم السفر",
+    "hero_title": "استكشف وجهتك القادمة بكل سهولة",
+    "hero_desc": "نحن نربطك بأفضل وسائل النقل والرحلات السياحية في مصر والوطن العربي من خلال منصات حجز ذكية وآمنة.",
+    "hero_btn": "اكتشف خدماتنا",
+    "why_title": "لماذا تختار تيكت هاب؟",
+    "why_desc": "نقدم حلولاً تكنولوجية مبتكرة تجعل من السفر تجربة مريحة، بداية من حجز التذكرة وحتى الوصول لوجهتك.",
+    "why": {
+      "quality": {
+        "title": "خدمة ممتازة",
+        "desc": "نعمل مع أفضل شركات النقل لضمان أعلى مستويات الرفاهية والجودة."
+      },
+      "safety": {
+        "title": "حجز آمن",
+        "desc": "بياناتك ومدفوعاتك محمية بأعلى معايير الأمان العالمية."
+      },
+      "time": {
+        "title": "توفير الوقت",
+        "desc": "لا مزيد من الانتظار، احجز رحلتك وتذكرتك في أقل من دقيقة واحدة."
+      }
+    },
+    "transport": {
+      "badge": "النقل البري الداخلي",
+      "title": "رحلات يومية بين المحافظات",
+      "desc": "حجز تذاكر أتوبيسات النقل البري لجميع محافظات مصر بأفضل الأسعار وأحدث الباصات عبر منصة Ticket Hub.",
+      "btn_text": "احجز رحلتك الداخلية الآن"
+    },
+    "tours": {
+      "badge": "السياحة والترفيه",
+      "title": "سياحة داخلية وخارجية",
+      "desc": "خطط لرحلتك القادمة واستكشف أجمل الوجهات السياحية في العالم مع برامجنا المخصصة على TicketHub Tours.",
+      "btn_text": "تصفح العروض السياحية"
+    },
+    "tickets": {
+      "badge": "منصة الحجز",
+      "title": "تذاكرك دائمًا في جيبك",
+      "desc": "نظام تذاكر إلكتروني متكامل يغني عن الورق ويضمن لك سهولة التعديل أو الإلغاء.",
+      "btn_text": "حجز تذكرة سريعة"
+    },
+    "cta_title": "ابدأ مغامرتك القادمة",
+    "cta_desc": "سواء كنت تسافر للعمل أو للترفيه، نحن هنا لنجعل رحلتك أفضل.",
+    "cta_btn": "احجز مقعدك الآن"
+  },
+  "portal": {
+    "welcome_badge": "Welcome to Ticketzita",
+    "main_title": "Your Ultimate Travel Hub",
+    "main_subtitle": "Choose your preferred platform and start your journey, whether across the country or around the world with a single click.",
+    "intl_desc": "Explore the world, book international flights, and tour programs in the most prestigious global destinations.",
+    "local_desc": "Fast and guaranteed booking for domestic intercity trips across Egypt with the best rates and modern buses.",
+    "feat_global": "Global Destinations",
+    "feat_currency": "Multi-currency Support",
+    "feat_visa": "Visa Support Services",
+    "feat_local_rates": "Best Local Rates",
+    "feat_24h": "24/7 Technical Support",
+    "feat_easy_pay": "Easy Local Payment",
+    "visit_site": "Visit Website Now",
+    "instant_sync": "Instant Order Sync",
+    "one_account": "One Account for All Services"
   }
 }

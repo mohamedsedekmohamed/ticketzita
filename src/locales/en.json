@@ -8,6 +8,7 @@
     "login": "Login",
     "About": "About",
     "Contact": "Contact",
+    "Services": "Services",
     "start": "Start Journey"
   },
   "hero": {
@@ -60,25 +61,26 @@
       "title_part1": "We're here to help",
       "title_part2": "Every step of the way."
     },
+    "form": {
+      "title": "Contact Us",
+      "desc": "Leave us a message and our team will get back to you as soon as possible.",
+      "name_label": "Full Name",
+      "email_label": "Email Address",
+      "phone_label": "Phone Number",
+      "service_label": "Service Type",
+      "service_placeholder": "Choose request type",
+      "service_trips": "My Trips",
+      "service_heavy": "Heavy Transport",
+      "service_tickets": "Ticket Booking",
+      "msg_label": "Your Message",
+      "submit_btn": "Send Message"
+    },
     "info": {
       "call": "Call Us",
       "email": "Email Us",
-      "visit": "Visit Us",
-      "address": "Cairo, Egypt",
-      "support_title": "24/7 Live Support",
-      "support_desc": "Our team is always available to answer your inquiries and solve your technical problems as quickly as possible.",
-      "status": "Available Now"
-    },
-    "form": {
-      "title": "Send us a message",
-      "desc": "Have a specific inquiry? Fill out the form below and one of our consultants will get back to you.",
-      "name_label": "Full Name",
-      "name_placeholder": "Enter your name here...",
-      "email_label": "Email Address",
-      "email_placeholder": "example@mail.com",
-      "msg_label": "Your Message",
-      "msg_placeholder": "How can we help you today?",
-      "submit_btn": "Send Message Now"
+      "support_title": "Support Hours",
+      "support_desc": "Our support team is available to answer your questions and help you anytime.",
+      "status": "Online Now"
     },
     "map": {
       "label": "Headquarters",
@@ -144,7 +146,69 @@
     "email_placeholder": "Your Email Address",
     "send": "Send",
     "rights": "All Rights Reserved.",
-    "location": "Cairo, Egypt"
+    "location": " Egypt",
+    "suez": "Suez",
+    "cairo": "Cairo",
+    "branches": "Our Branches"
+  },
+  "services": {
+    "badge": "Your Gateway to Travel",
+    "hero_title": "Explore Your Next Destination with Ease",
+    "hero_desc": "We connect you with the best transport and tourism trips in Egypt and the Arab world through smart, secure, and seamless booking platforms.",
+    "hero_btn": "Discover Our Services",
+    "why_title": "Why Choose Ticket Hub?",
+    "why_desc": "We provide innovative technological solutions that make travel a comfortable experience, from booking your ticket to reaching your destination.",
+    "why": {
+      "quality": {
+        "title": "Excellent Service",
+        "desc": "We partner with top-tier transport companies to ensure the highest levels of luxury and quality."
+      },
+      "safety": {
+        "title": "Secure Booking",
+        "desc": "Your data and payments are protected by the highest international security standards."
+      },
+      "time": {
+        "title": "Save Time",
+        "desc": "No more waiting in lines; book your trip and ticket in less than a minute."
+      }
+    },
+    "transport": {
+      "badge": "Domestic Land Transport",
+      "title": "Daily Intercity Trips",
+      "desc": "Book your bus tickets to all Egyptian governorates at the best prices with the latest fleet via the Ticket Hub platform.",
+      "btn_text": "Book Your Domestic Trip"
+    },
+    "tours": {
+      "badge": "Tourism & Leisure",
+      "title": "Local & International Tours",
+      "desc": "Plan your next adventure and explore the world's most beautiful destinations with our customized programs on TicketHub Tours.",
+      "btn_text": "Explore Tour Offers"
+    },
+    "tickets": {
+      "badge": "Booking Platform",
+      "title": "Your Tickets, Always in Your Pocket",
+      "desc": "An integrated electronic ticketing system that eliminates paper and ensures easy modification or cancellation.",
+      "btn_text": "Quick Ticket Booking"
+    },
+    "cta_title": "Start Your Next Adventure",
+    "cta_desc": "Whether you are traveling for business or leisure, we are here to make your journey better.",
+    "cta_btn": "Book Your Seat Now"
+  },
+  "portal": {
+    "welcome_badge": "مرحباً بك في تيكت زيتا",
+    "main_title": "وجهتك المثالية للسفر",
+    "main_subtitle": "اختر منصتك المفضلة وابدأ رحلتك سواء كانت داخل حدود الوطن أو حول العالم بكبسة زر واحدة.",
+    "intl_desc": "استكشف العالم، احجز رحلاتك الدولية، وبرامجك السياحية في أرقى الوجهات العالمية.",
+    "local_desc": "حجز سريع ومضمون للرحلات الداخلية بين المدن المصرية بأفضل الأسعار وأحدث الباصات.",
+    "feat_global": "وجهات حول العالم",
+    "feat_currency": "دفع بعملات متعددة",
+    "feat_visa": "دعم استخراج التأشيرات",
+    "feat_local_rates": "أفضل سعر محلي",
+    "feat_24h": "دعم فني 24 ساعة",
+    "feat_easy_pay": "طرق دفع محلية سهلة",
+    "visit_site": "زيارة الموقع الآن",
+    "instant_sync": "تزامن فوري للطلبات",
+    "one_account": "حساب موحد لجميع الخدمات"
   }
  
 }

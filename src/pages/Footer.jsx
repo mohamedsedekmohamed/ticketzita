@@ -88,14 +88,23 @@ const Footer = () => {
           <p className="text-gray-500 text-sm">
             © {currentYear} Ticketzita. {t('footer.rights')}
           </p>
-          <div className="flex gap-6 text-sm text-gray-500">
-            <span className="flex items-center gap-2">
-               <MapPin size={16} className="text-[#F15B00]" /> {t('footer.location')}
-            </span>
-            <span className="flex items-center gap-2">
-               <Phone size={16} className="text-[#F15B00]" /> 19XXX
-            </span>
-          </div>
+     {/* Branches Section */}
+<div>
+  <h4 className={`text-lg font-bold mb-6 border-[#F15B00] ${isRTL ? 'border-r-4 pr-3' : 'border-l-4 pl-3'}`}>
+    {t('footer.branches')}
+  </h4>
+  <ul className="space-y-3 text-gray-400">
+    <li>
+      <span className="font-semibold">{t('footer.suez')}:</span> 
+      <span>{" "}01144445151 / 0623522225</span>
+    </li>
+    <li>
+      <span className="font-semibold">{t('footer.cairo')}:</span> 
+      <span>{" "}0224505007 / 01144442121</span>
+    </li>
+  </ul>
+</div>
+
         </div>
       </div>
     </footer>

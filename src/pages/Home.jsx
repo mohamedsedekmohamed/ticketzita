@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from './../assets/Logo.jpeg'
+import logo from './../assets/mainlogo.jpeg'
 import { useTranslation } from 'react-i18next';
 
 const Home = () => {
@@ -12,7 +12,8 @@ const Home = () => {
         <div className="absolute inset-0 z-0">
           <img 
             src={logo} 
-            className="w-full h-full object-cover scale-105" 
+            className="w-full h-full object-contain"
+           
             alt="Hero Background"
           />
           {/* Overlay متدرج يعطي فخامة ويبرز النصوص */}

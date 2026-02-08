@@ -12,6 +12,7 @@ import { Scroll } from 'lucide-react';
 import ScrollToTop from './ScrollToTop';
 import Website from './pages/Website';
 import UserFrom from './pages/UserFrom';
+import Services from './pages/Services';
 
 function App() {
   const { i18n } = useTranslation();
@@ -46,6 +47,7 @@ function App() {
             {/* صفحة التواصل */}
             <Route path="/contact" element={<Contact />} />
             <Route path="/carerer" element={<UserFrom />} />
+            <Route path="/services" element={<Services />} />
 
             {/* صفحة الدعم */}
             <Route path="/website" element={
