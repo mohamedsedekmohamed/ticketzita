@@ -19,7 +19,7 @@ const Services = () => {
     { 
       key: "passenger_transport", 
       icon: <Bus size={32} />, 
-      img: car,
+      img: carr,
       featuresCount: 3
     },
     { 
@@ -31,7 +31,7 @@ const Services = () => {
     { 
       key: "domestic_tourism", 
       icon: <MapPin size={32} />, 
-            img: carr,
+            img: car,
 
       featuresCount: 3
     },
@@ -46,7 +46,7 @@ const Services = () => {
     <main dir={isRTL ? "rtl" : "ltr"} className="bg-[#020817] text-white font-sans overflow-x-hidden">
       
       {/* Hero Section */}
-      <section className="min-h-[80vh] flex items-center relative px-6 pt-20">
+      <section className="min-h-[80vh] flex items-center relative px-2 pt-20">
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#F15B00]/5 to-transparent pointer-events-none" />
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center relative z-10">
           <div data-aos="fade-up">
