@@ -12,18 +12,11 @@ import {
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useTranslation } from "react-i18next";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   const { t, i18n } = useTranslation();
   const isRTL = i18n.language === "ar";
-
-  const colors = {
-    dark: "#03112C",
-    accent: "#F15B00",
-    blue: "#4D86BB",
-    glass: "rgba(255, 255, 255, 0.03)",
-  };
 
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
@@ -34,14 +27,14 @@ const Contact = () => {
       className="min-h-screen bg-[#020917] text-white overflow-hidden font-sans"
       dir={isRTL ? "rtl" : "ltr"}
     >
-      {/* --- Background Ambient Effects --- */}
+      {/* Background Ambient Effects */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-[#F15B00]/10 blur-[120px] rounded-full animate-pulse"></div>
         <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-[#4D86BB]/10 blur-[120px] rounded-full"></div>
       </div>
 
       <div className="container mx-auto px-6 py-20 relative z-10">
-        {/* --- Header Section --- */}
+        {/* Header */}
         <div className="max-w-4xl mb-20" data-aos="fade-down">
           <motion.div
             initial={{ scale: 0.9, opacity: 0 }}
@@ -61,8 +54,7 @@ const Contact = () => {
           </h1>
         </div>
 
-        {/* --- The Bento Grid --- */}
-        <div className="grid lg:grid-cols-12 grid-rows-none gap-6">
+  <div className="grid lg:grid-cols-12 grid-rows-none gap-6">
           {/* Main Form - spans 7 columns */}
           <motion.div
             whileHover={{ y: -5 }}
@@ -192,110 +184,127 @@ const Contact = () => {
           </motion.div>
 
           {/* Contact Methods - Spans 5 columns */}
-          <div className="lg:col-span-5 grid gap-6">
-            {/* Call Card */}
-            <motion.div
-              whileHover={{ x: isRTL ? -10 : 10 }}
-              className="bg-white/5 border border-white/10 p-8 rounded-[2rem] flex items-center justify-between group cursor-pointer"
-            >
-              <div className="flex items-center gap-6">
-                <div className="w-14 h-14 rounded-2xl bg-[#F15B00]/10 flex items-center justify-center text-[#F15B00] group-hover:bg-[#F15B00] group-hover:text-white transition-all">
-                  <Phone size={24} />
-                </div>
-                <div>
-                  <p className="text-xs font-bold text-white/40 uppercase tracking-widest">
-                    {t("contact.info.call")}
-                  </p>
-                  <p className="text-xl font-black">+20 114 444 2121</p>
-                  <p className="text-xl font-black mt-3">+02 24 505 007</p>
-                </div>
-              </div>
-              <ExternalLink
-                size={20}
-                className="text-white/20 group-hover:text-white"
-              />
-            </motion.div>
+     <div className="lg:col-span-5 flex flex-col gap-6">
+  {/* Cairo Branch Card */}
+  <motion.div 
+    whileHover={{ x: isRTL ? -10 : 10 }}
+    className="group relative bg-white/5 border border-white/10 p-8 rounded-[2.5rem] overflow-hidden transition-all hover:border-[#4D86BB]/50 shadow-xl"
+  >
+    <div className="flex items-start gap-6 relative z-10">
+      <div className="w-14 h-14 rounded-2xl bg-[#4D86BB]/10 flex items-center justify-center text-[#4D86BB] group-hover:bg-[#4D86BB] group-hover:text-white transition-all duration-500 shadow-inner">
+        <MapPin size={28} />
+      </div>
+      <div className="flex-1">
+        <h4 className="text-sm font-bold text-[#4D86BB] uppercase tracking-widest mb-1">
+          {t('footer.cairo')}
+        </h4>
+        <div className="space-y-1">
+          <a href="tel:0224505007" className="block text-2xl font-black hover:text-[#4D86BB] transition-colors">
+            02 2450 5007
+          </a>
+          <a href="tel:01144442121" className="block text-2xl font-black hover:text-[#4D86BB] transition-colors">
+            011 4444 2121
+          </a>
+        </div>
+      </div>
+    </div>
+    {/* خلفية جمالية خفيفة */}
+    <div className="absolute -right-4 -bottom-4 opacity-5 text-[#4D86BB]">
+       <MapPin size={100} />
+    </div>
+  </motion.div>
 
-            {/* Email Card */}
-            <motion.div
-              whileHover={{ x: isRTL ? -10 : 10 }}
-              className="bg-white/5 border border-white/10 p-8 rounded-[2rem] flex items-center justify-between group cursor-pointer"
-            >
-              <div className="flex items-center gap-6">
-                <div className="w-14 h-14 rounded-2xl bg-[#4D86BB]/10 flex items-center justify-center text-[#4D86BB] group-hover:bg-[#4D86BB] group-hover:text-white transition-all">
-                  <Mail size={24} />
-                </div>
-                <div>
-                  <p className="text-xs font-bold text-white/40 uppercase tracking-widest">
-                    {t("contact.info.email")}
-                  </p>
-                  <p className="text-xl font-black italic">
-                    support@ticketzita.com
-                  </p>
-                </div>
-              </div>
-              <ExternalLink
-                size={20}
-                className="text-white/20 group-hover:text-white"
-              />
-            </motion.div>
+  {/* Suez Branch Card */}
+  <motion.div 
+    whileHover={{ x: isRTL ? -10 : 10 }}
+    className="group relative bg-white/5 border border-white/10 p-8 rounded-[2.5rem] overflow-hidden transition-all hover:border-[#F15B00]/50 shadow-xl"
+  >
+    <div className="flex items-start gap-6 relative z-10">
+      <div className="w-14 h-14 rounded-2xl bg-[#F15B00]/10 flex items-center justify-center text-[#F15B00] group-hover:bg-[#F15B00] group-hover:text-white transition-all duration-500 shadow-inner">
+        <MapPin size={28} />
+      </div>
+      <div className="flex-1">
+        <h4 className="text-sm font-bold text-[#F15B00] uppercase tracking-widest mb-1">
+          {t('footer.suez')}
+        </h4>
+        <div className="space-y-1">
+          <a href="tel:01144445151" className="block text-2xl font-black hover:text-[#F15B00] transition-colors">
+            011 4444 5151
+          </a>
+          <a href="tel:0623522225" className="block text-2xl font-black hover:text-[#F15B00] transition-colors">
+            062 3522 225
+          </a>
+        </div>
+      </div>
+    </div>
+    {/* خلفية جمالية خفيفة */}
+    <div className="absolute -right-4 -bottom-4 opacity-5 text-[#F15B00]">
+       <MapPin size={100} />
+    </div>
+  </motion.div>
 
-            {/* Support Hours Bento Box */}
-            <div className="bg-[#061F48] p-8 rounded-[2.5rem] border border-white/5 relative overflow-hidden group">
-              <div className="relative z-10">
-                <Clock className="text-[#F15B00] mb-4" size={32} />
-                <h4 className="text-2xl font-black mb-2">
-                  {t("contact.info.support_title")}
-                </h4>
-                <p className="text-white/50 text-sm leading-relaxed mb-6">
-                  {t("contact.info.support_desc")}
-                </p>
-                <div className="flex items-center gap-3">
-                  <div className="flex gap-1">
-                    {[1, 2, 3].map((i) => (
-                      <div
-                        key={i}
-                        className="w-1.5 h-1.5 rounded-full bg-[#F15B00] animate-bounce"
-                        style={{ animationDelay: `${i * 0.2}s` }}
-                      ></div>
-                    ))}
-                  </div>
-                  <span className="text-xs font-black uppercase tracking-widest text-[#F15B00]">
-                    {t("contact.info.status")}
-                  </span>
-                </div>
-              </div>
-              <div className="absolute bottom-[-20%] right-[-10%] w-32 h-32 bg-[#F15B00]/20 rounded-full blur-3xl"></div>
-            </div>
-          </div>
+  {/* Email Card */}
+  <motion.div 
+    whileHover={{ x: isRTL ? -10 : 10 }}
+    className="bg-white/5 border border-white/10 p-8 rounded-[2rem] flex items-center justify-between group cursor-pointer"
+  >
+    <div className="flex items-center gap-6">
+      <div className="w-14 h-14 rounded-2xl bg-white/5 flex items-center justify-center text-white/50 group-hover:bg-white group-hover:text-black transition-all">
+        <Mail size={24} />
+      </div>
+      <div>
+        <p className="text-xs font-bold text-white/40 uppercase tracking-widest">{t("contact.info.email")}</p>
+        <p className="text-xl font-black italic">support@ticketzita.com</p>
+      </div>
+    </div>
+  </motion.div>
+
+  {/* Support Hours Bento Box */}
+  <div className="bg-[#061F48] p-8 rounded-[2.5rem] border border-white/5 relative overflow-hidden group flex-grow">
+    <div className="relative z-10">
+      <Clock className="text-[#F15B00] mb-4" size={32} />
+      <h4 className="text-2xl font-black mb-2">{t("contact.info.support_title")}</h4>
+      <p className="text-white/50 text-sm leading-relaxed mb-6">{t("contact.info.support_desc")}</p>
+      <div className="flex items-center gap-3">
+        <div className="flex gap-1">
+          {[1, 2, 3].map((i) => (
+            <div key={i} className="w-1.5 h-1.5 rounded-full bg-[#F15B00] animate-bounce" style={{ animationDelay: `${i * 0.2}s` }}></div>
+          ))}
+        </div>
+        <span className="text-xs font-black uppercase tracking-widest text-[#F15B00]">{t("contact.info.status")}</span>
+      </div>
+    </div>
+    <div className="absolute bottom-[-20%] right-[-10%] w-32 h-32 bg-[#F15B00]/20 rounded-full blur-3xl"></div>
+  </div>
+</div>
         </div>
 
-        {/* --- Full Width Map Bento Box --- */}
-        <motion.div
-          initial={{ y: 50, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          className="mt-6 bg-white/5 border border-white/10 rounded-[3rem] p-4 h-[500px] relative group overflow-hidden"
-        >
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.123456!2d31.234567!3d30.044444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDAyJzQwLjAiTiAzMcKwMTQnMDQuNCJF!5e0!3m2!1sen!2seg!4v123456789"
-            className="w-full h-full rounded-[2.5rem] grayscale invert opacity-60 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-700"
-            style={{ border: 0 }}
-            allowFullScreen=""
-            loading="lazy"
-          ></iframe>
-
-          <div className="absolute bottom-10 left-10 right-10 flex flex-wrap gap-4 pointer-events-none">
-            <div className="bg-black/80 backdrop-blur-xl p-6 rounded-3xl border border-white/10 flex items-center gap-4">
-              <MapPin className="text-[#F15B00]" />
-              <div>
-                <p className="text-[10px] font-black uppercase text-white/40 tracking-widest">
-                  {t("contact.map.label")}
-                </p>
-                <p className="text-sm font-bold">{t("contact.map.city")}</p>
-              </div>
+        {/* --- Double Maps Section --- */}
+        <div className="grid md:grid-cols-2 gap-6 mt-8">
+          {/* Cairo Map */}
+          <motion.div data-aos="zoom-in" className="relative h-[400px] bg-white/5 border border-white/10 rounded-[2.5rem] overflow-hidden group">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3451.983!2d31.332!3d30.06!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDAzJzM2LjAiTiAzMcKwMTknNTUuMiJF!5e0!3m2!1sen!2seg!4v1620000000000!5m2!1sen!2seg"
+              className="w-full h-full grayscale invert opacity-50 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-700"
+              style={{ border: 0 }} allowFullScreen="" loading="lazy"
+            ></iframe>
+            <div className="absolute top-6 left-6 bg-black/80 backdrop-blur-md px-4 py-2 rounded-xl border border-white/10">
+              <span className="text-xs font-black text-[#4D86BB]">{t('footer.cairo')}</span>
             </div>
-          </div>
-        </motion.div>
+          </motion.div>
+
+          {/* Suez Map */}
+          <motion.div data-aos="zoom-in" data-aos-delay="100" className="relative h-[400px] bg-white/5 border border-white/10 rounded-[2.5rem] overflow-hidden group">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3460.5!2d32.5!3d29.9!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDU0JzAwLjAiTiAzMsKwMzAnMDAuMCJF!5e0!3m2!1sen!2seg!4v1620000000000!5m2!1sen!2seg"
+              className="w-full h-full grayscale invert opacity-50 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-700"
+              style={{ border: 0 }} allowFullScreen="" loading="lazy"
+            ></iframe>
+            <div className="absolute top-6 left-6 bg-black/80 backdrop-blur-md px-4 py-2 rounded-xl border border-white/10">
+              <span className="text-xs font-black text-[#F15B00]">{t('footer.suez')}</span>
+            </div>
+          </motion.div>
+        </div>
       </div>
     </div>
   );

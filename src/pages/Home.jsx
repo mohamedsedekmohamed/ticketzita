@@ -12,10 +12,10 @@ const Home = () => {
         <div className="absolute inset-0 z-0">
           <img 
             src={logo} 
-            className="w-full h-full "
+            className=" w-full h-full "
            
             alt="Hero Background"
-          />
+          />x
           {/* Overlay متدرج يعطي فخامة ويبرز النصوص */}
           {/* <div className="absolute inset-0 bg-gradient-to-b from-[#03112C]/80 via-[#03112C]/40 to-[#03112C]/90"></div> */}
         </div>
@@ -27,9 +27,7 @@ const Home = () => {
             {t('hero.title')} <span className="text-three">Ticketzita</span>
           </h1>
           
-          <p className="text-lg md:text-xl text-white/80 mb-12 max-w-2xl mx-auto font-light leading-relaxed">
-            {t('hero.subtitle')}
-          </p>
+    
 
        
 

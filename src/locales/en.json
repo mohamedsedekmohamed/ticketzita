@@ -3,72 +3,103 @@
     "home": "Home",
     "destinations": "Destinations",
     "offers": "Offers",
-    "website": "website",
+    "website": "Locations",
     "Carerer": "Careers",
-    "login": "Login",
-    "About": "About",
-    "Contact": "Contact",
+    "About": "About Us",
     "Services": "Services",
-    "start": "Start Journey"
+    "Contact": "Contact Us",
+    "login": "Login",
+    "start": "Start Your Journey"
   },
   "hero": {
-    "title": "Explore the world with",
-    "subtitle": "We offer you a smart, fast flight booking experience at the best global prices.",
+    "title": "Explore the World with",
+    "subtitle": "Providing you with a smart, fast flight booking experience at the best global prices.",
     "destination_placeholder": "Where do you want to go?",
     "search_btn": "Search Flights"
   },
- 
   "about": {
+    "who_we_are": {
+      "title": "Who We Are",
+      "about_us": {
+        "title": "About the Group",
+        "desc": "Our group was established to provide integrated transport and travel solutions that meet the needs of individuals, tourists, and corporations. With operations in Egypt and the UAE, we combine local expertise with international standards."
+      },
+      "vision": {
+        "title": "Our Vision",
+        "desc": "To become a leading group in the transport and travel sector across the Middle East, recognized for reliability, safety, and customer satisfaction."
+      },
+      "mission": {
+        "title": "Our Mission",
+        "desc": "To deliver high-quality transport and travel services through innovation, professionalism, and a commitment to safety."
+      },
+      "values": {
+        "title": "Our Values",
+        "list": [
+          "Safety First",
+          "Customer Satisfaction",
+          "Transparency",
+          "Reliability",
+          "Continuous Improvement"
+        ]
+      }
+    },
     "hero_badge": "Travel Smart.. Travel Safe",
-    "hero_title_1": "We Balance",
-    "hero_title_accent": "Premium Experience",
-    "hero_title_2": "With",
-    "hero_title_budget": "Smart Budgeting",
-    "hero_description": "We believe travel is a right for everyone; that's why we designed a booking system that ensures global safety standards with carefully planned economic packages.",
-    "safety_title": "Our Safety Commitment",
+    "hero_title_1": "Balancing",
+    "hero_title_accent": "Experience Luxury",
+    "hero_title_2": "and",
+    "hero_title_budget": "Budget Intelligence",
+    "hero_description": "Everyone deserves the joy of exploring the world. That's why we designed a booking system that combines global safety standards with smart, budget-friendly travel packages.",
+    "safety_title": "Our Commitment to Safety",
     "safety_item_1": "Comprehensive insurance on all trips",
     "safety_item_2": "Licensed and certified transport partners",
-    "safety_item_3": "24/7 live trip tracking via app",
-    "safety_item_4": "On-ground emergency support in every destination",
-    "iso_note": "* We apply international safety standards ISO 31000",
+    "safety_item_3": "24/7 live trip tracking via the app",
+    "safety_item_4": "Field emergency support team at every destination",
+    "iso_note": "* We apply ISO 31000 international safety standards",
     "economy_title": "Smart Economic Travel",
     "economy_item_1": "Real-time price comparison system",
     "economy_item_2": "Exclusive discounts for early bookings",
-    "economy_item_3": "All-inclusive packages (Flight + Hotel + Transport)",
+    "economy_item_3": "All-inclusive packages (Flight + Hotel + Transfers)",
     "economy_item_4": "Interest-free installment options",
     "discount_note": "Save up to 30% when booking 15 days in advance",
-    "why_us_title": "Why Travelers Trust Us?",
+    "why_us_title": "Why Do Travelers Trust Us?",
     "feature_timing_title": "Punctuality",
-    "feature_timing_desc": "We stick to a strict schedule to ensure every minute of your trip is utilized.",
+    "feature_timing_desc": "We adhere to a strict schedule to ensure every minute of your trip is utilized.",
     "feature_groups_title": "Group Trips",
-    "feature_groups_desc": "Economic packages for groups and families at competitive prices.",
-    "feature_destinations_title": "Selected Destinations",
+    "feature_groups_desc": "Economical packages for groups and families at competitive prices.",
+    "feature_destinations_title": "Curated Destinations",
     "feature_destinations_desc": "Our team visits destinations first to ensure quality and safety.",
     "feature_transparency_title": "Full Transparency",
     "feature_transparency_desc": "No hidden fees; the price you see is the price you pay.",
     "banner_title_1": "Your Next Trip",
-    "banner_title_2": "In",
+    "banner_title_2": "is in",
     "banner_title_accent": "Safe Hands",
-    "banner_desc": "Whether you are planning a short domestic trip or a transcontinental adventure, we guarantee the perfect balance between economic price and peace of mind.",
+    "banner_desc": "Whether you are planning a short domestic trip or a transcontinental adventure, we guarantee the perfect balance between economic pricing and peace of mind.",
     "btn_book": "Book Your Trip Now",
-    "btn_consult": "Talk to a Consultant",
+    "btn_consult": "Talk to a Travel Consultant",
     "stat_safe": "Safe Trips",
-    "stat_saving": "Cost Savings"
+    "stat_saving": "Cost Savings",
+    "values_items": {
+      "safety": "Safety First",
+      "satisfaction": "Customer Satisfaction",
+      "transparency": "Transparency",
+      "reliability": "Reliability",
+      "improvement": "Continuous Improvement"
+    }
   },
   "contact": {
     "hero": {
       "badge": "Contact us anytime",
-      "title_part1": "We're here to help",
-      "title_part2": "Every step of the way."
+      "title_part1": "We are here to help you",
+      "title_part2": "at every step."
     },
     "form": {
       "title": "Contact Us",
-      "desc": "Leave us a message and our team will get back to you as soon as possible.",
+      "desc": "Leave us a message and we will get back to you as soon as possible.",
       "name_label": "Full Name",
       "email_label": "Email Address",
       "phone_label": "Phone Number",
       "service_label": "Service Type",
-      "service_placeholder": "Choose request type",
+      "service_placeholder": "Select request type",
       "service_trips": "My Trips",
       "service_heavy": "Heavy Transport",
       "service_tickets": "Ticket Booking",
@@ -78,9 +109,10 @@
     "info": {
       "call": "Call Us",
       "email": "Email Us",
-      "support_title": "Support Hours",
-      "support_desc": "Our support team is available to answer your questions and help you anytime.",
-      "status": "Online Now"
+      "support_title": "Technical Support",
+      "support_desc": "Our support team is available to answer your inquiries and assist you at any time.",
+      "status": "Available Now",
+      "location_label": "Our Location"
     },
     "map": {
       "label": "Headquarters",
@@ -88,49 +120,54 @@
     }
   },
   "ecosystem": {
-    "tagline": "The Future of Travel",
-    "title_part1": "Your Journey Starts",
-    "title_part2": "With Ticketzita",
-    "main_description": "We bridge the gap between local comfort and global exploration through a seamless digital ecosystem designed for the modern traveler.",
-    
-    "intl_desc": "Explore the world without boundaries. Access thousands of international flights and luxury hotels with a single click.",
-    "intl_f1": "500+ Global Airlines",
+    "tagline": "The Future of Travel in Your Hands",
+    "title_part1": "Your Journey Starts Here",
+    "title_part2": "with Ticketzita",
+    "main_description": "We are the bridge between local comfort and global exploration, through an integrated digital ecosystem designed specifically for the modern traveler.",
+    "intl_desc": "Explore the world without limits. Direct access to thousands of international flights and luxury hotels with just one click.",
+    "intl_f1": "+500 Global Airlines",
     "intl_f2": "Instant Visa Assistance",
-    "intl_f3": "Multi-currency Payments",
-    "intl_btn": "Explore International",
-
-    "local_desc": "Discover the hidden gems of your country. Tailored local experiences with premium transport and stay options.",
-    "local_f1": "Best Local Rates",
-    "local_f2": "24h Domestic Support",
+    "intl_f3": "Multi-currency Payment",
+    "intl_btn": "Explore International Offers",
+    "local_desc": "Discover hidden gems in your country. Tailor-made local experiences with premium accommodation and transport options.",
+    "local_f1": "Best Local Prices",
+    "local_f2": "24/7 Local Support",
     "local_f3": "Exclusive Local Deals",
-    "local_btn": "Discover Locally",
-
+    "local_btn": "Explore Local Offers",
     "stat_users": "Active Users",
-    "stat_dest": "Destinations",
+    "stat_dest": "Tourist Destinations",
     "stat_support": "Live Support",
     "stat_rate": "User Rating",
-
-    "bridge_title": "One Account, Infinite Possibilities",
-    "bridge_desc": "Switch seamlessly between our local and international platforms. Your data, loyalty points, and preferences follow you everywhere.",
+    "bridge_title": "One Account, Endless Options",
+    "bridge_desc": "Move seamlessly between our local and international platforms. Your data, loyalty points, and preferences follow you everywhere.",
     "badge_1": "Unified Wallet",
     "badge_2": "Smart Sync",
     "badge_3": "Premium Access",
-
+    "feature1_title": "Safety & Comfort",
+    "feature1_desc": "We guarantee complete safety and comfort on every journey according to the highest standards.",
+    "feature2_title": "Professional Team",
+    "feature2_desc": "Professional drivers and staff specifically trained to provide the best service.",
+    "feature3_title": "Competitive Prices",
+    "feature3_desc": "Get the best value for money with a transparent and economical pricing system.",
+    "feature4_title": "Modern Fleet",
+    "feature4_desc": "A modern, well-maintained fleet equipped with the latest comfort amenities.",
+    "feature5_title": "24/7 Support",
+    "feature5_desc": "Round-the-clock customer service to help you anytime, anywhere.",
     "how_it_works": "Simple Steps",
     "step_1": "Create your unified global account",
-    "step_2": "Choose your destination (Local or Intl)",
-    "step_3": "Enjoy a 360° supported travel experience",
+    "step_2": "Choose your destination (Local or International)",
+    "step_3": "Enjoy a fully supported travel experience",
     "why_title_tag": "Why Ticketzita?",
-    "why_main_title": "More than just a booking platform, we are your travel companion.",
+    "why_main_title": "Reliable Transport & Travel Solutions",
     "why_feature1_title": "Absolute Security",
     "why_feature1_desc": "Your data and payments are encrypted with the highest global security standards.",
     "why_feature2_title": "Lightning Fast",
-    "why_feature2_desc": "Book your flight or stay in less than 60 seconds with our optimized engine.",
+    "why_feature2_desc": "Book your trip or stay in less than 60 seconds via our advanced engine.",
     "why_feature3_title": "Comprehensive Coverage",
-    "why_feature3_desc": "We connect you to over 500 destinations worldwide with ease and comfort."
+    "why_feature3_desc": "We take you to more than 500 destinations worldwide with ease and comfort."
   },
   "footer": {
-    "description": "Your first destination for organizing trips and booking tickets locally and internationally with the latest technologies and best prices.",
+    "description": "Your premier destination for organizing trips and booking tickets locally and internationally with the latest technology and best prices.",
     "quick_links": "Quick Links",
     "about": "About Ticketzita",
     "intl_trips": "International Trips",
@@ -143,72 +180,92 @@
     "contact_us": "Contact Us",
     "newsletter_title": "Subscribe With Us",
     "newsletter_desc": "Get the latest offers and discounts directly to your inbox.",
-    "email_placeholder": "Your Email Address",
+    "email_placeholder": "Your Email",
     "send": "Send",
-    "rights": "All Rights Reserved.",
-    "location": " Egypt",
+    "rights": "All rights reserved.",
+    "location": "Cairo, Egypt",
     "suez": "Suez",
     "cairo": "Cairo",
     "branches": "Our Branches"
   },
-  "services": {
-    "badge": "Your Gateway to Travel",
-    "hero_title": "Explore Your Next Destination with Ease",
-    "hero_desc": "We connect you with the best transport and tourism trips in Egypt and the Arab world through smart, secure, and seamless booking platforms.",
-    "hero_btn": "Discover Our Services",
-    "why_title": "Why Choose Ticket Hub?",
-    "why_desc": "We provide innovative technological solutions that make travel a comfortable experience, from booking your ticket to reaching your destination.",
-    "why": {
-      "quality": {
-        "title": "Excellent Service",
-        "desc": "We partner with top-tier transport companies to ensure the highest levels of luxury and quality."
-      },
-      "safety": {
-        "title": "Secure Booking",
-        "desc": "Your data and payments are protected by the highest international security standards."
-      },
-      "time": {
-        "title": "Save Time",
-        "desc": "No more waiting in lines; book your trip and ticket in less than a minute."
-      }
-    },
-    "transport": {
-      "badge": "Domestic Land Transport",
-      "title": "Daily Intercity Trips",
-      "desc": "Book your bus tickets to all Egyptian governorates at the best prices with the latest fleet via the Ticket Hub platform.",
-      "btn_text": "Book Your Domestic Trip"
-    },
-    "tours": {
-      "badge": "Tourism & Leisure",
-      "title": "Local & International Tours",
-      "desc": "Plan your next adventure and explore the world's most beautiful destinations with our customized programs on TicketHub Tours.",
-      "btn_text": "Explore Tour Offers"
-    },
-    "tickets": {
-      "badge": "Booking Platform",
-      "title": "Your Tickets, Always in Your Pocket",
-      "desc": "An integrated electronic ticketing system that eliminates paper and ensures easy modification or cancellation.",
-      "btn_text": "Quick Ticket Booking"
-    },
-    "cta_title": "Start Your Next Adventure",
-    "cta_desc": "Whether you are traveling for business or leisure, we are here to make your journey better.",
-    "cta_btn": "Book Your Seat Now"
+ "services": {
+  "cta_btn": "Contact Us Now",
+  "badge": "Your Gateway to Professional Transport",
+  "hero_title": "Integrated Travel & Logistics Solutions",
+  "hero_desc": "From luxury passenger travel to heavy-duty cargo logistics, we provide seamless services across Egypt.",
+  "hero_btn": "Explore Our Services",
+  "passenger_transport": {
+    "title": "Passenger Transportation",
+    "desc": "We provide safe and comfortable passenger transportation services across Egypt using modern buses and vehicles suitable for individuals, companies, schools, and events.",
+    "f1": "Daily and scheduled transportation services",
+    "f2": "Private bus rental",
+    "f3": "Event, conference, and group transportation",
+    "btn_text": "Book Transport"
   },
-  "portal": {
-    "welcome_badge": "مرحباً بك في تيكت زيتا",
-    "main_title": "وجهتك المثالية للسفر",
-    "main_subtitle": "اختر منصتك المفضلة وابدأ رحلتك سواء كانت داخل حدود الوطن أو حول العالم بكبسة زر واحدة.",
-    "intl_desc": "استكشف العالم، احجز رحلاتك الدولية، وبرامجك السياحية في أرقى الوجهات العالمية.",
-    "local_desc": "حجز سريع ومضمون للرحلات الداخلية بين المدن المصرية بأفضل الأسعار وأحدث الباصات.",
-    "feat_global": "وجهات حول العالم",
-    "feat_currency": "دفع بعملات متعددة",
-    "feat_visa": "دعم استخراج التأشيرات",
-    "feat_local_rates": "أفضل سعر محلي",
-    "feat_24h": "دعم فني 24 ساعة",
-    "feat_easy_pay": "طرق دفع محلية سهلة",
-    "visit_site": "زيارة الموقع الآن",
-    "instant_sync": "تزامن فوري للطلبات",
-    "one_account": "حساب موحد لجميع الخدمات"
+  "cargo_transport": {
+    "title": "Cargo & Goods Transportation",
+    "desc": "The company provides comprehensive domestic transportation services for all types of goods across all governorates of Egypt.",
+    "f1": "Heavy equipment, food, and industrial materials",
+    "f2": "GPS tracking system for real-time monitoring",
+    "f3": "Full commitment to loading and delivery schedules",
+    "f4": "Comprehensive cargo insurance during transportation",
+    "btn_text": "Request Quote"
+  },
+  "domestic_tourism": {
+    "title": "Domestic Tourism Trips",
+    "desc": "Discover Egypt with our professionally organized domestic tourism trips. We offer comfortable transportation and organized schedules.",
+    "f1": "Sharm El Sheikh & Hurghada",
+    "f2": "Luxor, Aswan & Alexandria",
+    "f3": "Fayoum & Siwa Oasis",
+    "btn_text": "View Trips"
+  },
+  "flight_booking": {
+    "title": "Flight Ticket Booking",
+    "desc": "We offer fast and reliable flight ticket booking services for domestic and international flights at competitive prices.",
+    "f1": "Domestic and International flights",
+    "f2": "Best price options guaranteed",
+    "f3": "Customer support before & after booking",
+    "btn_text": "Book Tickets"
+  },
+  "cta_title": "Ready to Start Your Journey?",
+  "cta_desc": "Whether it is a personal trip or a large-scale logistics operation, our team is ready to serve you 24/7.",
+  "stats": {
+    "op": "24/7 Operation",
+    "gps": "GPS Tracking",
+    "safety": "100% Safety",
+    "iso": "ISO Standards"
   }
- 
+},
+  "portal": {
+    "welcome_badge": "Welcome to Ticketzita",
+    "main_title": "Your Ideal Travel Destination",
+    "main_subtitle": "Choose your preferred platform and start your journey, whether within national borders or around the world, with a single click.",
+    "intl_desc": "Explore the world, book your international flights, and tourist programs in the finest global destinations.",
+    "local_desc": "Fast and guaranteed booking for domestic trips between Egyptian cities at the best prices and on the latest buses.",
+    "feat_global": "Destinations Worldwide",
+    "feat_currency": "Multi-currency Payment",
+    "feat_visa": "Visa Issuance Support",
+    "feat_local_rates": "Best Local Rates",
+    "feat_24h": "24-hour Technical Support",
+    "feat_easy_pay": "Easy Local Payment Methods",
+    "visit_site": "Visit Website Now",
+    "instant_sync": "Instant Order Sync",
+    "one_account": "Unified Account for All Services"
+  },
+  "companies": {
+    "tagline": "Our Global Presence",
+    "main_title": "Our Group Companies",
+    "description": "We operate across borders to provide transport and logistics solutions with international specifications.",
+    "location_egypt": "Headquarters: Egypt",
+    "egypt_name": "Egypt Company",
+    "egypt_desc": "The cornerstone of our group, specializing in integrated passenger transport, luxury tourist trips, and organizing global travel services.",
+    "tags": {
+      "transport": "Passenger Transport",
+      "tourism": "Tourist Trips",
+      "travel": "Travel Management"
+    },
+    "cta_title": "Expansion & Growth",
+    "cta_desc": "We are constantly working on expanding our fleet and services to meet the growing needs of our distinguished clients.",
+    "view_details": "View Operations"
+  }
 }

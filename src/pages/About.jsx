@@ -15,7 +15,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useTranslation } from "react-i18next";
 import { motion } from 'framer-motion';
-
 const AboutTravel = () => {
   const { t, i18n } = useTranslation();
   const isRTL = i18n.language === "ar";
@@ -70,66 +69,101 @@ const AboutTravel = () => {
         </div>
       </section>
 
-      {/* Safety & Economy */}
-      <section className="py-24 relative bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12">
-            
-            {/* Safety Card */}
-            <div 
-              className="p-10 rounded-[2.5rem] text-white flex flex-col justify-between shadow-2xl"
-              style={{ backgroundColor: colors.two }}
-              data-aos="fade-up"
-            >
-              <div>
-                <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-8 shadow-lg" style={{ backgroundColor: colors.three }}>
-                  <ShieldCheck size={35} />
-                </div>
-                <h2 className="text-3xl font-black mb-6">{t("about.safety_title")}</h2>
-                <ul className="space-y-4">
-                  {[1, 2, 3, 4].map((i) => (
-                    <li key={i} className="flex items-center gap-3 opacity-90">
-                      <Lock size={18} style={{ color: colors.four }} />
-                      <span>{t(`about.safety_item_${i}`)}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mt-10 pt-6 border-t border-white/10 text-sm italic opacity-60">
-                {t("about.iso_note")}
-              </div>
-            </div>
+   <section className="py-24 bg-gray-50">
+  <div className="container mx-auto px-4">
+    {/* Header */}
+    <div className="text-center mb-16" data-aos="fade-up">
+      <h2 className="text-4xl font-black mb-4" style={{ color: 'var(--color-one)' }}>
+        {t("about.who_we_are.title")}
+      </h2>
+      <div className="w-24 h-1.5 mx-auto rounded-full" style={{ backgroundColor: 'var(--color-three)' }}></div>
+    </div>
 
-            {/* Economy Card */}
-            <div 
-              className="p-10 rounded-[2.5rem] bg-white border-2 flex flex-col justify-between shadow-xl"
-              style={{ borderColor: colors.one }}
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div>
-                <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-8 shadow-lg text-white" style={{ backgroundColor: colors.four }}>
-                  <Wallet size={35} />
-                </div>
-                <h2 className="text-3xl font-black mb-6" style={{ color: colors.one }}>{t("about.economy_title")}</h2>
-                <ul className="space-y-4">
-                  {[1, 2, 3, 4].map((i) => (
-                    <li key={i} className="flex items-center gap-3 text-gray-700">
-                      <CheckCircle2 size={18} style={{ color: colors.three }} />
-                      <span>{t(`about.economy_item_${i}`)}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mt-10 flex items-center gap-4 p-4 rounded-2xl bg-gray-50">
-                <TrendingDown style={{ color: colors.three }} />
-                <p className="text-sm font-bold text-gray-600">{t("about.discount_note")}</p>
-              </div>
-            </div>
+    {/* Grid */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
+      {/* About Us */}
+      <motion.div
+        className="bg-white p-8 rounded-2xl shadow hover:shadow-lg transition-all duration-300 border border-gray-100"
+        whileHover={{ scale: 1.03 }}
+        data-aos="fade-right"
+      >
+        <div className="flex items-center mb-4 space-x-3">
+          <div className="text-3xl text-blue-400">
+            <i className="fas fa-info-circle"></i>
           </div>
+          <h3 className="text-2xl font-bold" style={{ color: 'var(--color-two)' }}>
+            {t("about.who_we_are.about_us.title")}
+          </h3>
         </div>
-      </section>
+        <p className="text-gray-600 leading-relaxed">
+          {t("about.who_we_are.about_us.desc")}
+        </p>
+      </motion.div>
+
+      {/* Vision */}
+      <motion.div
+        className="bg-white p-8 rounded-2xl shadow hover:shadow-lg transition-all duration-300 border border-gray-100"
+        whileHover={{ scale: 1.03 }}
+        data-aos="fade-left"
+      >
+        <div className="flex items-center mb-4 space-x-3">
+          <div className="text-3xl text-green-400">
+            <i className="fas fa-eye"></i>
+          </div>
+          <h3 className="text-2xl font-bold" style={{ color: 'var(--color-two)' }}>
+            {t("about.who_we_are.vision.title")}
+          </h3>
+        </div>
+        <p className="text-gray-600 leading-relaxed">
+          {t("about.who_we_are.vision.desc")}
+        </p>
+      </motion.div>
+
+      {/* Mission */}
+      <motion.div
+        className="bg-white p-8 rounded-2xl shadow hover:shadow-lg transition-all duration-300 border border-gray-100"
+        whileHover={{ scale: 1.03 }}
+        data-aos="fade-right"
+      >
+        <div className="flex items-center mb-4 space-x-3">
+          <div className="text-3xl text-yellow-400">
+            <i className="fas fa-bullseye"></i>
+          </div>
+          <h3 className="text-2xl font-bold" style={{ color: 'var(--color-two)' }}>
+            {t("about.who_we_are.mission.title")}
+          </h3>
+        </div>
+        <p className="text-gray-600 leading-relaxed">
+          {t("about.who_we_are.mission.desc")}
+        </p>
+      </motion.div>
+
+      {/* Values */}
+      <motion.div
+        className="bg-white p-8 rounded-2xl shadow hover:shadow-lg transition-all duration-300 border border-gray-100"
+        whileHover={{ scale: 1.03 }}
+        data-aos="fade-left"
+      >
+        <div className="flex items-center mb-4 space-x-3">
+          <div className="text-3xl text-red-400">
+            <i className="fas fa-heart"></i>
+          </div>
+          <h3 className="text-2xl font-bold" style={{ color: 'var(--color-two)' }}>
+            {t("about.who_we_are.values.title")}
+          </h3>
+        </div>
+        <ul className="text-gray-600 leading-relaxed list-disc list-inside space-y-2">
+          {t("about.who_we_are.values.list", { returnObjects: true }).map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
+      </motion.div>
+
+    </div>
+  </div>
+</section>
+
 
       {/* Features */}
       <section className="py-24">
