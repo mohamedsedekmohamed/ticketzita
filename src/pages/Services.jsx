@@ -68,7 +68,7 @@ const Services = () => {
       </section>
 
       {/* Stats Bar */}
-      <div className="bg-[#F15B00] py-8">
+      <div className="bg-[#F15B00] py-8 mt-3">
         <div className="max-w-7xl mx-auto px-6  flex justify-around gap-8 text-center">
           <div><h4 className="font-black text-2xl">{t("services.stats.op")}</h4></div>
           {/* <div><h4 className="font-black text-2xl">{t("services.stats.gps")}</h4></div> */}
