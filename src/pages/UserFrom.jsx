@@ -17,77 +17,8 @@ import { GoProjectSymlink } from "react-icons/go";
 import { IoLanguage } from "react-icons/io5";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useTranslation } from "react-i18next";
 
-const translations = {
-  en: {
-    careerRegistration: "Career Registration",
-    careerSubText: "Join our career platform and find your dream job",
-    personalInfo: "Personal Information",
-    fullName: "Full Name",
-    phone: "Phone Number",
-    birthDate: "Birth Date",
-    city: "City",
-    address: "Address",
-    marital: "Marital Status",
-    children: "Number of Children",
-    educationInfo: "Education Information",
-    qualification: "Qualification",
-    graduateDate: "Graduation Date",
-    university: "University",
-    collage: "College/Faculty",
-    careerInfo: "Career Information",
-    job: "Job Position",
-    salary: "Expected Salary",
-    currentJob: "Current Job",
-    experiences: "Work Experience & Skills",
-    courses: "Courses & Certifications",
-    submit: "Submit Application",
-    submitting: "Submitting Application...",
-    securityCheck: "Security Check",
-    enterSecurity: "Please enter the security password",
-    wrongSecurity: "Wrong security number ❌",
-    serverError: "Server error, please try again later ❌",
-    single: "Single",
-    married: "Married",
-    separated: "Separated",
-    link: "link",
-    Upload_CV: "Upload_CV",
-  },
-  ar: {
-    Upload_CV: "تحميل السيرة الذاتية",
-    careerRegistration: "تسجيل للوظيفة",
-    careerSubText: "انضم إلى منصتنا الوظيفية وابحث عن وظيفتك المثالية",
-    personalInfo: "المعلومات الشخصية",
-    fullName: "الاسم الكامل",
-    phone: "رقم الهاتف",
-    birthDate: "تاريخ الميلاد",
-    link: "لينك",
-    city: "المدينة",
-    address: "العنوان",
-    marital: "الحالة الاجتماعية",
-    children: "عدد الأطفال",
-    educationInfo: "المؤهل الدراسي",
-    qualification: "المؤهل",
-    graduateDate: "تاريخ التخرج",
-    university: "الجامعة",
-    collage: "الكلية",
-    careerInfo: "المعلومات الوظيفية",
-    job: "الوظيفة",
-    salary: "الراتب المتوقع",
-    currentJob: "الوظيفة الحالية",
-    experiences: "الخبرات والمهارات",
-    courses: "الدورات والشهادات",
-    submit: "إرسال الطلب",
-    submitting: "جاري إرسال الطلب...",
-    securityCheck: "التحقق الأمني",
-    enterSecurity: "من فضلك أدخل الرقم السري",
-    wrongSecurity: "الرقم السري غير صحيح ❌",
-    serverError: "خطأ في الخادم، حاول لاحقًا ❌",
-    single: "أعزب",
-    married: "متزوج",
-    separated: "منفصل",
-  },
-};
 
 const UserFrom = () => {
   const [formData, setFormData] = useState({
@@ -117,8 +48,8 @@ const UserFrom = () => {
     qualifications: [],
   });
   const fileInputRef = useRef(null);
-
-  const [lang, setLang] = useState("en");
+const { t, i18n } = useTranslation();
+const lang = i18n.language; 
   const [loading, setLoading] = useState(false);
   const [dataLoading, setDataLoading] = useState(true);
   const [security, setSecurity] = useState(false);
@@ -134,7 +65,7 @@ const UserFrom = () => {
         setSecurity(res.security_status);
       })
       .catch((err) => {
-        toast.error("Failed to load form data ❌");
+        toast.error(t("career.errors.loadData"));
       })
       .finally(() => {
         setDataLoading(false);
@@ -156,10 +87,10 @@ const UserFrom = () => {
         toast.success("success");
       } else {
         setSecurityPassed(false);
-        toast.error("Wrong security number ❌");
+        toast.error(t("career.errors.wrongSecurity"));
       }
     } catch (error) {
-      toast.error("Server error, please try again later ❌");
+      toast.error(t("career.errors.server"));
     } finally {
       setLoading(false);
     }
@@ -176,7 +107,7 @@ const UserFrom = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (formData.upload_cv === null) {
-      toast.error("Please upload your CV ❌");
+      toast.error(t("career.errors.uploadCV"));
       return;
     }
 
@@ -243,7 +174,6 @@ const UserFrom = () => {
     }
   };
 
-  const t = translations[lang];
 
   if (dataLoading) {
     return (
@@ -267,10 +197,10 @@ const UserFrom = () => {
               <User className="w-8 h-8 text-white" />
             </div>
             <h2 className="text-3xl font-bold bg-[#03112C] bg-clip-text text-transparent">
-              {translations[lang].careerRegistration}
+             {t("career.title")}
             </h2>
             <p className="text-gray-600 mt-2">
-              {translations[lang].careerSubText}
+              {t("career.subtitle")}
             </p>
           </div>
 
@@ -306,9 +236,11 @@ const UserFrom = () => {
           <div className="text-center mb-8">
             <div className=" rounded-full py-3 flex items-center justify-center mx-auto mb-4"></div>
             <h2 className="text-3xl font-bold py-1 bg-[#03112C] bg-clip-text text-transparent">
-              {t.careerRegistration}
-            </h2>
-            <p className="text-gray-600 mt-2">{t.careerSubText}</p>
+  {t("career.title")}
+</h2>
+<p className="text-gray-600 mt-2">
+  {t("career.subtitle")}
+</p>
           </div>
 
           <form
@@ -319,12 +251,12 @@ const UserFrom = () => {
             <div className="md:col-span-2">
               <h3 className="text-xl font-semibold text-gray-800 mb-4 flex items-center">
                 <User className="w-5 h-5 mr-2 text-[#03112C]" />
-                {t.personalInfo}
+  {t("career.personalInfo")}
               </h3>
             </div>
 
             <Field
-              label={t.fullName}
+              label={t("career.fullName")}
               name="name"
               value={formData.name}
               onChange={handleChange}
@@ -333,7 +265,7 @@ const UserFrom = () => {
               required
             />
             <Field
-              label={t.phone}
+              label={t("career.phone")}
               name="phone"
               value={formData.phone}
               onChange={handleChange}
@@ -342,7 +274,7 @@ const UserFrom = () => {
               required
             />
             <SelectField
-              label={t.job}
+              label={t("career.job")}
               name="job_id"
               value={formData.job_id}
               onChange={handleChange}
@@ -354,7 +286,7 @@ const UserFrom = () => {
 
             <div className="mb-4">
               <label htmlFor="birth_date" className="block text-gray-700 mb-2">
-                {t.birthDate}
+                {t("career.birthDate")}
               </label>
               <div className="relative">
                 <input
@@ -369,7 +301,7 @@ const UserFrom = () => {
               </div>
             </div>
             <SelectField
-              label={t.city}
+              label={t("career.city")}
               name="city_id"
               value={formData.city_id}
               onChange={handleChange}
@@ -379,7 +311,7 @@ const UserFrom = () => {
               required
             />
             <TextareaField
-              label={t.address}
+              label={t("career.address")}
               name="address"
               value={formData.address}
               onChange={handleChange}
@@ -389,15 +321,15 @@ const UserFrom = () => {
             />
 
             <SelectField
-              label={t.marital}
+              label={t("career.marital")}
               name="marital"
               value={formData.marital}
               onChange={handleChange}
               Icon={Heart}
               options={[
-                { id: "single", name: t.single },
-                { id: "married", name: t.married },
-                { id: "separated", name: t.separated },
+                { id: "single", name: t("career.single") },
+                { id: "married", name: t("career.married") },
+                { id: "separated", name: t("career.separated") },
               ]}
               lang={lang}
               required
@@ -405,7 +337,7 @@ const UserFrom = () => {
             {formData.marital === "single" ||
               (formData.marital && (
                 <Field
-                  label={t.children}
+                  label={t("career.children")}
                   type="number"
                   name="children"
                   value={formData.children}
@@ -419,12 +351,12 @@ const UserFrom = () => {
             <div className="md:col-span-2 mt-6">
               <h3 className="text-xl font-semibold text-gray-800 mb-4 flex items-center">
                 <GraduationCap className="w-5 h-5 mr-2 text-[#03112C]" />
-                {t.educationInfo}
+                {t("career.educationInfo")}
               </h3>
             </div>
 
             <SelectField
-              label={t.qualification}
+              label={t("career.qualification")}
               name="qualification_id"
               value={formData.qualification_id}
               onChange={handleChange}
@@ -435,7 +367,7 @@ const UserFrom = () => {
             />
             <div className="mb-4">
               <label htmlFor="birth_date" className="block text-gray-700 mb-2">
-                {t.graduateDate}
+                {t("career.graduateDate")}
               </label>
               <div className="relative">
                 <input
@@ -450,7 +382,7 @@ const UserFrom = () => {
               </div>
             </div>
             <Field
-              label={t.university}
+              label={t("career.university")}
               name="university"
               value={formData.university}
               onChange={handleChange}
@@ -458,7 +390,7 @@ const UserFrom = () => {
               lang={lang}
             />
             <Field
-              label={t.collage}
+              label={t("career.collage")}
               name="collage"
               value={formData.collage}
               onChange={handleChange}
@@ -469,12 +401,12 @@ const UserFrom = () => {
             <div className="md:col-span-2 mt-6">
               <h3 className="text-xl font-semibold text-gray-800 mb-4 flex items-center">
                 <Briefcase className="w-5 h-5 mr-2 text-[#03112C]" />
-                {t.careerInfo}
+                {t("career.careerInfo")}
               </h3>
             </div>
 
             <Field
-              label={t.salary}
+              label={t("career.salary")}
               name="expected_salary"
               type="number"
               value={formData.expected_salary}
@@ -485,7 +417,7 @@ const UserFrom = () => {
               required
             />
             <TextareaField
-              label={t.currentJob}
+              label={t("career.currentJob")}
               name="current_job"
               value={formData.current_job}
               onChange={handleChange}
@@ -493,7 +425,7 @@ const UserFrom = () => {
               lang={lang}
             />
             <TextareaField
-              label={t.experiences}
+              label={t("career.experiences")}
               name="experiences"
               value={formData.experiences}
               onChange={handleChange}
@@ -502,7 +434,7 @@ const UserFrom = () => {
               required
             />
             <TextareaField
-              label={t.courses}
+              label={t("career.courses")}
               name="courses"
               value={formData.courses}
               onChange={handleChange}
@@ -510,7 +442,7 @@ const UserFrom = () => {
               lang={lang}
             />
             <Field
-              label={t.link}
+              label={t("career.link")}
               name="link"
               value={formData.link}
               onChange={handleChange}
@@ -519,7 +451,7 @@ const UserFrom = () => {
             />
             <div className="flex flex-col space-y-2">
               <label className="text-sm font-medium text-gray-700">
-                {t.Upload_CV}
+                {t("career.uploadCV")}
               </label>
 
               <input
@@ -542,7 +474,7 @@ const UserFrom = () => {
                ${!formData.upload_cv ? "bg-gray-500" : "bg-[#03112C]"} text-white font-medium
                shadow-md hover:shadow-lg transition-all duration-200`}
               >
-                {!formData.upload_cv ? "Upload CV 📂" : formData.upload_cv.name}
+                {!formData.upload_cv ? t("career.uploadCV") : formData.upload_cv.name}
               </label>
             </div>
 
@@ -552,7 +484,7 @@ const UserFrom = () => {
                 disabled={loading}
                 className="w-full bg-[#03112C]  text-white py-3 rounded-lg"
               >
-                {loading ? t.submitting : t.submit}
+                {loading ? t("career.submitting") : t("career.submit")}
               </button>
             </div>
           </form>

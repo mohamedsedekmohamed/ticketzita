@@ -111,43 +111,46 @@ const Info = () => {
             </motion.h2>
           </div>
 
-          {/* 2. شبكة الخدمات (Core Services) */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-40">
-            <FeatureCard 
-              icon={Users} 
-              title="Passenger"
-              subtitle="Transport"
-              desc="Reliable and comfortable travel solutions for individuals and groups."
-              btnText="Explore Service"
-              isRTL={isRTL}
-            />
-            <FeatureCard 
-              icon={FaTruck} 
-              dark={true}
-              title="Cargo"
-              subtitle="Services"
-              desc="Secure and timely delivery services for all types of freight."
-              btnText="Explore Service"
-              isRTL={isRTL}
-            />
-            <FeatureCard 
-              icon={Map} 
-              title="Tourism"
-              subtitle="Trips"
-              desc="Discover the best local destinations with our curated tour packages."
-              btnText="Explore Service"
-              isRTL={isRTL}
-            />
-            <FeatureCard 
-              icon={Plane} 
-              dark={true}
-              title="Flight"
-              subtitle="Booking"
-              desc="Hassle-free flight reservations to any destination worldwide."
-              btnText="Explore Service"
-              isRTL={isRTL}
-            />
-          </div>
+        {/* 2. شبكة الخدمات (Core Services) */}
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-40">
+  <FeatureCard 
+    icon={Users} 
+    title={t("services.passenger.title")}
+    subtitle={t("services.passenger.subtitle")}
+    desc={t("services.passenger.desc")}
+    btnText={t("services.btn")}
+    isRTL={isRTL}
+  />
+
+  <FeatureCard 
+    icon={FaTruck} 
+    dark={true}
+    title={t("services.cargo.title")}
+    subtitle={t("services.cargo.subtitle")}
+    desc={t("services.cargo.desc")}
+    btnText={t("services.btn")}
+    isRTL={isRTL}
+  />
+
+  <FeatureCard 
+    icon={Map} 
+    title={t("services.tourism.title")}
+    subtitle={t("services.tourism.subtitle")}
+    desc={t("services.tourism.desc")}
+    btnText={t("services.btn")}
+    isRTL={isRTL}
+  />
+
+  <FeatureCard 
+    icon={Plane} 
+    dark={true}
+    title={t("services.flight.title")}
+    subtitle={t("services.flight.subtitle")}
+    desc={t("services.flight.desc")}
+    btnText={t("services.btn")}
+    isRTL={isRTL}
+  />
+</div>
 
           {/* 3. قسم لماذا نحن (Why Choose Us) */}
           <div className="mb-40">
@@ -231,7 +234,7 @@ const Info = () => {
           {t('companies.tagline')}
         </h4>
         <h2 className="text-[#03112C] text-5xl md:text-7xl font-black tracking-tighter leading-none">
-          {t('companies.main_title')}
+          {/* {t('companies.main_title')} */}
         </h2>
       </div>
       <p className="text-gray-500 font-medium max-w-sm text-lg leading-relaxed">
@@ -255,7 +258,7 @@ const Info = () => {
             <span className="font-bold tracking-widest uppercase text-xs">{t('companies.location_egypt')}</span>
           </div>
           
-          <h3 className="text-white text-6xl md:text-8xl font-black mb-8 tracking-tighter">
+          <h3 className="text-white text-4xl md:text-8xl font-black mb-8 tracking-tighter">
             {t('companies.egypt_name')}
           </h3>
           

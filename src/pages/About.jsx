@@ -15,10 +15,11 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useTranslation } from "react-i18next";
 import { motion } from 'framer-motion';
+import { useNavigate } from "react-router-dom";
 const AboutTravel = () => {
   const { t, i18n } = useTranslation();
   const isRTL = i18n.language === "ar";
-
+const navigate = useNavigate();
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -202,12 +203,10 @@ const AboutTravel = () => {
               </h3>
               <p className="text-lg opacity-70 mb-8">{t("about.banner_desc")}</p>
               <div className="flex flex-wrap gap-4">
-                <button className="px-8 py-4 rounded-full font-bold transition-all hover:scale-105 flex items-center gap-2 shadow-lg" style={{ backgroundColor: colors.three }}>
+                <button onClick={() => navigate("/services")}  className="px-8 py-4 rounded-full font-bold transition-all hover:scale-105 flex items-center gap-2 shadow-lg" style={{ backgroundColor: colors.three }}>
                    {t("about.btn_book")} <ArrowRight size={20} className={isRTL ? "rotate-180" : ""}/>
                 </button>
-                <button className="px-8 py-4 rounded-full font-bold border border-white/20 hover:bg-white/10 transition-all">
-                   {t("about.btn_consult")}
-                </button>
+             
               </div>
             </div>
 

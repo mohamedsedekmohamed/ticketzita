@@ -24,7 +24,7 @@ const Contact = () => {
 
   return (
     <div
-      className="min-h-screen bg-[#020917] text-white overflow-hidden font-sans"
+      className="min-h-screen bg-[#020917] text-white overflow-hidden font-sans px-1"
       dir={isRTL ? "rtl" : "ltr"}
     >
       {/* Background Ambient Effects */}
@@ -33,7 +33,7 @@ const Contact = () => {
         <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-[#4D86BB]/10 blur-[120px] rounded-full"></div>
       </div>
 
-      <div className="container mx-auto px-6 py-20 relative z-10">
+      <div className="container mx-auto py-20 relative z-10">
         {/* Header */}
         <div className="max-w-4xl mb-20" data-aos="fade-down">
           <motion.div
@@ -199,12 +199,22 @@ const Contact = () => {
           {t('footer.cairo')}
         </h4>
         <div className="space-y-1">
-          <a href="tel:0224505007" className="block text-2xl font-black hover:text-[#4D86BB] transition-colors">
-            02 2450 5007
-          </a>
-          <a href="tel:01144442121" className="block text-2xl font-black hover:text-[#4D86BB] transition-colors">
-            011 4444 2121
-          </a>
+        <a
+  href="tel:0224505007"
+  dir="ltr"
+  className="block text-2xl font-black hover:text-[#4D86BB] transition-colors text-left"
+>
+  02 2450 5007
+</a>
+
+<a
+  href="tel:01144442121"
+  dir="ltr"
+  className="block text-2xl font-black hover:text-[#4D86BB] transition-colors text-left"
+>
+  011 4444 2121
+</a>
+
         </div>
       </div>
     </div>
@@ -228,12 +238,22 @@ const Contact = () => {
           {t('footer.suez')}
         </h4>
         <div className="space-y-1">
-          <a href="tel:01144445151" className="block text-2xl font-black hover:text-[#F15B00] transition-colors">
-            011 4444 5151
-          </a>
-          <a href="tel:0623522225" className="block text-2xl font-black hover:text-[#F15B00] transition-colors">
-            062 3522 225
-          </a>
+        <a
+  href="tel:01144445151"
+  dir="ltr"
+  className="block text-2xl font-black hover:text-[#F15B00] transition-colors text-left"
+>
+  011 4444 5151
+</a>
+
+<a
+  href="tel:0623522225"
+  dir="ltr"
+  className="block text-2xl font-black hover:text-[#F15B00] transition-colors text-left"
+>
+  062 3522 225
+</a>
+
         </div>
       </div>
     </div>
@@ -277,6 +297,8 @@ const Contact = () => {
     <div className="absolute bottom-[-20%] right-[-10%] w-32 h-32 bg-[#F15B00]/20 rounded-full blur-3xl"></div>
   </div>
 </div>
+
+
         </div>
 
         {/* --- Double Maps Section --- */}

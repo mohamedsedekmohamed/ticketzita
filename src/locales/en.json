@@ -188,54 +188,86 @@
     "cairo": "Cairo",
     "branches": "Our Branches"
   },
- "services": {
+"services": {
   "cta_btn": "Contact Us Now",
-  "badge": "Your Gateway to Professional Transport",
+  "badge": "Your Gateway to Professional Transport Services",
   "hero_title": "Integrated Travel & Logistics Solutions",
-  "hero_desc": "From luxury passenger travel to heavy-duty cargo logistics, we provide seamless services across Egypt.",
+  "hero_desc": "From luxury passenger transport to heavy cargo logistics, we deliver seamless and secure services across Egypt.",
   "hero_btn": "Explore Our Services",
+  "btn": "Explore Service",
+
+  "passenger": {
+    "title": "Passenger",
+    "subtitle": "Transport",
+    "desc": "Reliable and comfortable travel solutions for individuals and groups."
+  },
+
+  "cargo": {
+    "title": "Cargo",
+    "subtitle": "Services",
+    "desc": "Safe and on-time delivery services for all types of shipments."
+  },
+
+  "tourism": {
+    "title": "Tourism",
+    "subtitle": "Trips",
+    "desc": "Discover the best local destinations with our carefully curated tour packages."
+  },
+
+  "flight": {
+    "title": "Flight",
+    "subtitle": "Booking",
+    "desc": "Fast and easy flight bookings to any destination worldwide."
+  },
+
   "passenger_transport": {
-    "title": "Passenger Transportation",
-    "desc": "We provide safe and comfortable passenger transportation services across Egypt using modern buses and vehicles suitable for individuals, companies, schools, and events.",
-    "f1": "Daily and scheduled transportation services",
-    "f2": "Private bus rental",
-    "f3": "Event, conference, and group transportation",
-    "btn_text": "Book Transport"
+    "title": "Passenger Transport",
+    "desc": "We provide safe and comfortable passenger transport services across Egypt using modern buses and vehicles suitable for individuals, companies, schools, and events.",
+    "f1": "Daily and scheduled transport services",
+    "f2": "Private bus rentals for trips",
+    "f3": "Transport for events, conferences, and groups",
+    "btn_text": "Book Your Trip Now"
   },
+
   "cargo_transport": {
-    "title": "Cargo & Goods Transportation",
-    "desc": "The company provides comprehensive domestic transportation services for all types of goods across all governorates of Egypt.",
-    "f1": "Heavy equipment, food, and industrial materials",
-    "f2": "GPS tracking system for real-time monitoring",
-    "f3": "Full commitment to loading and delivery schedules",
+    "title": "Cargo Transport & Logistics",
+    "desc": "We offer comprehensive local transport services for all types of goods across all governorates in Egypt, with full commitment to safety standards.",
+    "f1": "Transport of heavy equipment, food, and industrial materials",
+    "f2": "GPS tracking system for real-time shipment monitoring",
+    "f3": "Full commitment to pickup and delivery schedules",
     "f4": "Comprehensive cargo insurance during transportation",
-    "btn_text": "Request Quote"
+    "btn_text": "Request a Quote"
   },
+
   "domestic_tourism": {
     "title": "Domestic Tourism Trips",
-    "desc": "Discover Egypt with our professionally organized domestic tourism trips. We offer comfortable transportation and organized schedules.",
+    "desc": "Discover the beauty of Egypt with our professionally organized trips. We provide comfortable transportation and unforgettable tour programs.",
     "f1": "Sharm El Sheikh & Hurghada",
     "f2": "Luxor, Aswan & Alexandria",
     "f3": "Fayoum & Siwa Oasis",
     "btn_text": "View Trips"
   },
+
   "flight_booking": {
     "title": "Flight Ticket Booking",
-    "desc": "We offer fast and reliable flight ticket booking services for domestic and international flights at competitive prices.",
-    "f1": "Domestic and International flights",
-    "f2": "Best price options guaranteed",
-    "f3": "Customer support before & after booking",
-    "btn_text": "Book Tickets"
+    "desc": "We provide fast and reliable flight ticket booking services for domestic and international flights at the best competitive prices.",
+    "f1": "Domestic and international flights",
+    "f2": "Guaranteed best price options",
+    "f3": "Customer support before and after booking",
+    "btn_text": "Book Your Ticket"
   },
-  "cta_title": "Ready to Start Your Journey?",
-  "cta_desc": "Whether it is a personal trip or a large-scale logistics operation, our team is ready to serve you 24/7.",
+
+  "cta_title": "Ready to Start Your Next Journey?",
+  "cta_desc": "Whether it's a personal trip or a major logistics operation, our team is ready to serve you 24/7.",
+  
   "stats": {
-    "op": "24/7 Operation",
-    "gps": "GPS Tracking",
+    "op": "24/7 Operations",
+    "gps": "Real-time GPS Tracking",
     "safety": "100% Safety",
     "iso": "ISO Standards"
   }
-},
+}
+,
   "portal": {
     "welcome_badge": "Welcome to Ticketzita",
     "main_title": "Your Ideal Travel Destination",
@@ -267,5 +299,52 @@
     "cta_title": "Expansion & Growth",
     "cta_desc": "We are constantly working on expanding our fleet and services to meet the growing needs of our distinguished clients.",
     "view_details": "View Operations"
+  },
+  "career": {
+    "title": "Career Registration",
+    "subtitle": "Join our career platform and find your dream job",
+
+    "personalInfo": "Personal Information",
+    "fullName": "Full Name",
+    "phone": "Phone Number",
+    "birthDate": "Birth Date",
+    "city": "City",
+    "address": "Address",
+    "marital": "Marital Status",
+    "children": "Number of Children",
+
+    "educationInfo": "Education Information",
+    "qualification": "Qualification",
+    "graduateDate": "Graduation Date",
+    "university": "University",
+    "collage": "College / Faculty",
+
+    "careerInfo": "Career Information",
+    "job": "Job Position",
+    "salary": "Expected Salary",
+    "currentJob": "Current Job",
+    "experiences": "Work Experience & Skills",
+    "courses": "Courses & Certifications",
+    "link": "Link",
+
+    "uploadCV": "Upload CV",
+    "submit": "Submit Application",
+    "submitting": "Submitting Application...",
+
+    "single": "Single",
+    "married": "Married",
+    "separated": "Separated",
+
+    "securityCheck": "Security Check",
+    "enterSecurity": "Please enter the security password",
+
+    "success": "Registration successful! 🎉",
+
+    "errors": {
+      "loadData": "Failed to load form data ❌",
+      "wrongSecurity": "Wrong security number ❌",
+      "server": "Server error, please try again later ❌",
+      "uploadCV": "Please upload your CV ❌"
+    }
   }
 }
